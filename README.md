@@ -1,4 +1,4 @@
-# Sisma's Microtonal synth
+# Sisma's Microtonal Synth
 
 A VST subtractive synth that allows you to fine-tune each scale degree. <br>
 Programmed in C++ using the JUCE library.
