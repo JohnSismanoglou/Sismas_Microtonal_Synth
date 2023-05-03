@@ -3,6 +3,8 @@
 A VST subtractive synth that allows you to fine-tune each scale degree. <br>
 Programmed in C++ using the JUCE library.
 
+![alt text](https://github.com/JohnSismanoglou/Sismas_Microtonal_Synth/blob/main/Sisma's_Microtonal_Synth_UI.png?raw=true)
+
 #### **WARNING!!!** <br>
 This app was made using JUCE v6.0.5. <br>
 Trying to build the app using the latest JUCE version will probably result in some kind of error. <br>
