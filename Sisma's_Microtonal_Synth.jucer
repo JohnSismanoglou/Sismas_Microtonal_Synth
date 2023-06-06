@@ -19,12 +19,13 @@
       <FILE id="rMQICb" name="MPEVoice.h" compile="0" resource="0" file="Source/MPEVoice.h"/>
       <FILE id="rfNCY1" name="CustomOscillator.h" compile="0" resource="0"
             file="Source/CustomOscillator.h"/>
+      <FILE id="HGoHp8" name="VST_Logo.jpg" compile="0" resource="1" file="Source/VST_Logo.jpg"/>
       <FILE id="KxKsZ4" name="VST_Logo_2.jpg" compile="0" resource="1" file="Source/VST_Logo_2.jpg"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>
-    <VS2019 targetFolder="Builds/VisualStudio2019">
+    <VS2019 targetFolder="Builds/VisualStudio2019" smallIcon="HGoHp8" bigIcon="HGoHp8">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="MPEVstProject"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="MPEVstProject"/>

@@ -18,7 +18,8 @@ public:
     //==============================================================================
     CustomOscillator()
     {
-        processorChain.template get<levelIndex>().setRampDurationSeconds(0.2f);
+        processorChain.template get<levelIndex>().setRampDurationSeconds(0.002f);
+
     }
     
     //===============================================================================
@@ -50,7 +51,7 @@ public:
     void setWaveform(Waveform waveform) {
 
         auto pi = juce::MathConstants<float>::pi;
-
+        
         switch (waveform)
         {
         case Waveform::disabled:
@@ -98,7 +99,7 @@ public:
 
                 float sample = 0;
                 float level = 0;
-                for (int harmonic = 1; harmonic < 40; harmonic += 2)
+                for (int harmonic = 1; harmonic < 20; harmonic += 2)
                 {
                     level = 1.0f / harmonic;
                     sample = sample + std::sin(x * harmonic) * level;
@@ -112,7 +113,7 @@ public:
 
                 float sample = 0;
                 float level = 0;
-                for (int harmonic = 1; harmonic < 40; harmonic++)
+                for (int harmonic = 1; harmonic < 15; harmonic++)
                 {
                     level = 1.0f / harmonic;
                     sample = sample + std::sin(x * harmonic) * level;
@@ -175,7 +176,7 @@ public:
     void setFrequency(float newValue, bool force = false)
     {
         auto& osc = processorChain.template get<oscIndex>();
-        osc.setFrequency(newValue, force);       
+        osc.setFrequency(newValue, force);   
     }
 
     //==============================================================================
@@ -220,6 +221,7 @@ private:
         velocityIndex,
         levelIndex
     };
+
 
     juce::dsp::ProcessorChain<juce::dsp::Oscillator<float>,juce::dsp::Gain<float>, juce::dsp::Gain<float>> processorChain;
 

@@ -27,6 +27,7 @@ public:
     //==============================================================================
     void prepare(const juce::dsp::ProcessSpec& spec,juce::AudioProcessorValueTreeState *apvts) noexcept
     {
+        
         setCurrentPlaybackSampleRate(spec.sampleRate);        
 
         //========================= PREPARING VOICES ==================================================================

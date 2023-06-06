@@ -72,6 +72,7 @@ public:
         filter.setCutoffFrequency(cutoffFreq);
         filter.setResonance(filterResonance);
         filter.setType((juce::dsp::StateVariableTPTFilterType)apvts->getRawParameterValue("FILTER_CHOICE")->load());
+        
 
         filterModeChoice = (int)apvts->getRawParameterValue("FILTER_MODE_CHOICE")->load();
 
